@@ -22,7 +22,7 @@ const BookState = props => {
   const searchBooks = async text => {
     try {
       const res = await axios.get(
-        `http://openlibrary.org/search.json?title=${text}`
+        `https://openlibrary.org/search.json?title=${text}`
       );
 
       dispatch({
